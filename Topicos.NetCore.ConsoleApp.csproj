@@ -6,7 +6,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Topicos.Netcore.Convertidor\bin\**" />
+    <Compile Remove="Topicos.Netcore.Convertidor\obj\**" />
+    <Compile Remove="Topicos.Netcore.NorthWind.Model\bin\**" />
+    <Compile Remove="Topicos.Netcore.NorthWind.Model\obj\**" />
+    <EmbeddedResource Remove="Topicos.Netcore.Convertidor\bin\**" />
+    <EmbeddedResource Remove="Topicos.Netcore.Convertidor\obj\**" />
+    <EmbeddedResource Remove="Topicos.Netcore.NorthWind.Model\bin\**" />
+    <EmbeddedResource Remove="Topicos.Netcore.NorthWind.Model\obj\**" />
+    <None Remove="Topicos.Netcore.Convertidor\bin\**" />
+    <None Remove="Topicos.Netcore.Convertidor\obj\**" />
+    <None Remove="Topicos.Netcore.NorthWind.Model\bin\**" />
+    <None Remove="Topicos.Netcore.NorthWind.Model\obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Topicos.NetCore.Mensajeria.BL\Topicos.NetCore.Mensajeria.BL.csproj" />
+    <ProjectReference Include="Topicos.Netcore.Convertidor\Topicos.Netcore.Convertidor.csproj" />
   </ItemGroup>
 
 </Project>
