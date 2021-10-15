@@ -7,11 +7,13 @@ namespace Topicos.Netcore.NorthWind.Model.Models
 {
     public partial class Product
     {
+        public Product()
+        {
+            OrderDetails = new HashSet<OrderDetail>();
+        }
+
         public int ProductId { get; set; }
         public string ProductName { get; set; }
-        public string ProviderName { get; set; }
-        public string CategoryName { get; set; }
-        public string CantidadUnidadesDesabastesimiento { get; set; }
         public int? SupplierId { get; set; }
         public int? CategoryId { get; set; }
         public string QuantityPerUnit { get; set; }
@@ -23,5 +25,6 @@ namespace Topicos.Netcore.NorthWind.Model.Models
 
         public virtual Category Category { get; set; }
         public virtual Supplier Supplier { get; set; }
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

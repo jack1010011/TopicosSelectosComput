@@ -16,8 +16,6 @@ namespace Topicos.Netcore.NorthWind.Model.Models
 
         public int EmployeeId { get; set; }
         public string LastName { get; set; }
-        public string JefaturaName { get; set; }
-        public string EmployeeFullName { get; set; }
         public string FirstName { get; set; }
         public string Title { get; set; }
         public string TitleOfCourtesy { get; set; }
